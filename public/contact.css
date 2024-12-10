@@ -1,0 +1,114 @@
+/* Contact Form */
+body {
+  font-family: "Baloo Bhai 2", sans-serif;
+  background-color: #1f1f1f; /* Dark background */
+  color: #d3d3d3; /* Light text color */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Container */
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #2a2a2a; /* Dark background for the form */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Form Group */
+.form-group {
+  margin-bottom: 20px; /* Reduced margin for tighter spacing */
+}
+
+/* Labels */
+label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #d3d3d3; /* Light text for labels */
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Inputs and Textarea */
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="file"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #444; /* Darker border color */
+  background-color: #333; /* Dark background for inputs */
+  color: #d3d3d3; /* Light text color */
+  transition: border 0.3s ease, background-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="file"]:focus,
+textarea:focus {
+  border-color: #ffcc00; /* Yellow border on focus */
+  background-color: #444; /* Darker background on focus */
+  outline: none;
+}
+
+/* Textarea */
+textarea {
+  height: 150px;
+  resize: none; /* Disable resizing */
+}
+
+/* Submit Button */
+input[type="submit"] {
+  background-color: #ffcc00; /* Yellow background for submit button */
+  color: #1f1f1f; /* Dark text for the button */
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  width: 100%;
+  margin-top: 10px; /* Add margin above the button */
+}
+
+/* Submit Button Hover */
+input[type="submit"]:hover {
+  background-color: #f7a600; /* Darken the button on hover */
+  transform: translateY(-2px); /* Slight raise on hover */
+}
+
+/* Submit Button Focus */
+input[type="submit"]:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(255, 204, 0, 0.5); /* Glow effect on focus */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+  input[type="submit"] {
+    font-size: 18px;
+  }
+}
+/* Centering the Heading */
+header {
+  text-align: center;
+  margin-bottom: 30px; /* Space below the heading */
+}
+
+h1 {
+  font-size: 36px;
+  color: white; /* You can adjust the color as per your preference */
+  margin: 0; /* Remove any default margin */
+  padding: 10px; /* Add some padding for spacing */
+}

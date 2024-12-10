@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engine Diagnostic Service</title>
+    <link rel="stylesheet" href="EngineDiagnostic.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">OnRoadMechanix</div>
+        <nav>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="#about-us">About Us</a></li>
+                <li><a href="ContactUs.css">Contact Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="Login.html">Login/Signup</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Engine Diagnostic Service</h1>
+        <form id="engine-diagnostic-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" name="phone" required>
+
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" required>
+
+            <label for="diagnostic-type">Select Diagnostic Type:</label>
+            <select id="diagnostic-type" name="diagnostic-type" required>
+                <option value="">Select Diagnostic Type</option>
+                <option value="basic">Basic Engine Diagnostic</option>
+                <option value="advanced">Advanced Engine Diagnostic</option>
+                <option value="complete">Complete Engine Diagnostic</option>
+            </select>
+
+            <div id="payment-section">
+                <p id="payment-message">Please make payment below to proceed</p>
+                <p>Amount: <span id="payment-amount">₹0</span></p>
+                <button type="button" id="payment-btn">Pay Now</button>
+            </div>
+
+            <button type="submit" id="submit-btn" disabled>Submit Request</button>
+        </form>
+    </div>
+
+    <script src="EngineDiagnostic.js"></script>
+</body>
+</html>

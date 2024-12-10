@@ -1,0 +1,84 @@
+/* Signup Page Styling */
+body {
+  font-family: "Baloo Bhai 2", sans-serif;
+  background-color: #1f1f1f; /* Dark background for consistency */
+  color: #d3d3d3; /* Light text color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.signup-container {
+  background-color: #2c2c2c; /* Slightly lighter dark gray */
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7); /* Consistent with form elements on the homepage */
+  text-align: center;
+  width: 400px; /* Slightly wider for more fields */
+}
+
+.signup-container h2 {
+  font-size: 2rem;
+  color: #ffcc00; /* Yellow for headings */
+  margin-bottom: 20px;
+}
+
+form input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  background-color: #444; /* Dark gray for input fields */
+  border: 1px solid #444;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 16px;
+}
+
+form input:focus {
+  outline: none;
+  border-color: #ffcc00; /* Highlighted border on focus */
+}
+
+form input[type="submit"] {
+  background-color: #ffcc00; /* Yellow for submit button */
+  color: #1f1f1f;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  padding: 12px;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+  background-color: #e6b800; /* Slightly darker yellow on hover */
+}
+
+p {
+  font-size: 14px;
+  margin-top: 15px;
+  color: #bbb; /* Light gray for text */
+}
+
+p a {
+  color: #ffcc00;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+p a:hover {
+  text-decoration: underline;
+}
+
+.error-message {
+  background-color: #2b2b2b; /* Darker background for error message */
+  color: #ffcc00; /* Yellow for emphasis */
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+}

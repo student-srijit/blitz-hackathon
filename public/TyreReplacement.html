@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tire Replacement - OnRoadMechanix</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="TyreReplacement.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">OnRoadMechanix</div>
+        <nav>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="#about-us">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="Login.html">Login/Signup</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Tire Replacement</h1>
+            <p>Fill in your details and select tire options to request tire replacement service.</p>
+        </section>
+
+        <section class="request-tire-replacement">
+            <div class="form-container">
+                <h2>Request Tire Replacement</h2>
+                <form id="tire-replacement-form">
+                    <div class="input-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="location">Location:</label>
+                        <input type="text" id="location" name="location" placeholder="Enter your location" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="tire-type">Tire Type:</label>
+                        <select id="tire-type" name="tire-type" required>
+                            <option value="">Select Tire Type</option>
+                            <option value="all-season">All Season</option>
+                            <option value="summer">Summer</option>
+                            <option value="winter">Winter</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label for="tire-brand">Tire Brand:</label>
+                        <select id="tire-brand" name="tire-brand" required>
+                            <option value="">Select Tire Brand</option>
+                            <option value="brand1">Brand 1</option>
+                            <option value="brand2">Brand 2</option>
+                            <option value="brand3">Brand 3</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label for="payment-amount">Price: <span id="payment-amount">₹0</span></label>
+                    </div>
+                    <div class="input-group">
+                        <button type="button" id="payment-btn">Pay</button>
+                    </div>
+                    <div class="input-group">
+                        <button type="submit" id="submit-btn" disabled>Submit Request</button>
+                    </div>
+                </form>
+                <p id="payment-message"></p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 OnRoadMechanix. All rights reserved.</p>
+    </footer>
+
+    <script src="TyreReplacement.js"></script>
+</body>
+</html>

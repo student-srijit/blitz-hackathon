@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fuel Delivery Request - OnRoadMechanix</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="FuelDelivery.css" />
+  </head>
+
+  <body>
+    <header class="navbar">
+      <div class="logo">OnRoadMechanix</div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h1>Fuel Delivery Request</h1>
+        <p>
+          Fill out the form below to request fuel delivery to your location.
+        </p>
+      </section>
+
+      <section class="request-fuel-delivery">
+        <div class="form-container">
+          <h2>Request Fuel Delivery Assistance</h2>
+          <form id="fuel-delivery-form">
+            <div class="input-group">
+              <label for="name">Name:</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your name"
+                required
+              />
+            </div>
+            <div class="input-group">
+              <label for="phone">Phone Number:</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="Enter your phone number"
+                required
+              />
+            </div>
+            <div class="input-group">
+              <label for="location">Location:</label>
+              <input
+                type="text"
+                id="location"
+                name="location"
+                placeholder="Enter your location"
+                required
+              />
+            </div>
+            <button type="submit" class="cta-button" id="submit-btn">
+              Request Fuel Delivery
+            </button>
+          </form>
+        </div>
+
+        <!-- Link to local server -->
+        <p>
+          For more details, visit our local server at:
+          <a href="http://localhost:4000" target="_blank"
+            >http://localhost:4000</a
+          >
+        </p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2024 OnRoadMechanix. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

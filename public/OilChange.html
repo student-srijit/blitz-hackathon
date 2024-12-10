@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oil Change Request - OnRoadMechanix</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="OilChange.css" />
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="logo">OnRoadMechanix</div>
+        <nav>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="#about-us">About Us</a></li>
+                <li><a href="ContactUs.html">Contact Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="Login.html">Login/Signup</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+
+
+    
+
+    <main>
+        <section class="hero">
+            <h1>Oil Change Request</h1>
+            <p>Fill out the form to request an oil change service, along with a tow truck pickup.</p>
+        </section>
+
+        <section class="oil-change-request">
+            <div class="form-container">
+                <h2>Request Oil Change Service</h2>
+                <form id="oil-change-form" method="POST">
+                    <!-- Client Details -->
+                    <div class="input-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required />
+                    </div>
+                    <div class="input-group">
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required />
+                    </div>
+                    <div class="input-group">
+                        <label for="location">Location:</label>
+                        <input type="text" id="location" name="location" placeholder="Enter your location" required />
+                    </div>
+
+                    <!-- Oil Type & Brands -->
+                    <div class="input-group">
+                        <label for="oil-type">Choose Oil Type:</label>
+                        <select id="oil-type" name="oil-type" required>
+                            <option value="synthetic">Synthetic Oil</option>
+                            <option value="conventional">Conventional Oil</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="oil-brand">Choose Oil Brand:</label>
+                        <select id="oil-brand" name="oil-brand" required>
+                            <option value="mobil1">Mobil 1</option>
+                            <option value="shell">Shell</option>
+                            <option value="castrol">Castrol</option>
+                            <option value="valvoline">Valvoline</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="oil-price">Oil Price (in INR):</label>
+                        <input type="text" id="oil-price" name="oil-price" readonly />
+                    </div>
+
+                    <!-- Tow Truck Time Selection -->
+                    <div class="input-group">
+                        <label for="tow-truck-time">Select Tow Truck Pickup Time:</label>
+                        <input type="time" id="tow-truck-time" name="tow-truck-time" required />
+                    </div>
+
+                    <!-- Payment Section -->
+                    <div id="payment-section">
+                        <h3>Payment</h3>
+                        <p id="payment-message">Please complete the payment of <strong id="payment-amount">₹0</strong></p>
+                        <button type="button" class="cta-button" id="payment-btn">Pay Now</button>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="cta-button" id="submit-btn" disabled>Submit Request</button>
+                </form>
+                <div id="response-message"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 OnRoadMechanix. All rights reserved.</p>
+    </footer>
+
+    <script src="OilChange.js"></script>
+</body>
+
+</html>

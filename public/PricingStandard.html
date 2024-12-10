@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment Page - OnRoadMechanix</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="PricingAdvance.css" />
+  </head>
+
+  <body>
+    <header class="navbar">
+      <div class="logo">OnRoadMechanix</div>
+    </header>
+
+    <div class="container">
+      <section class="pricing-section">
+        <h2>Confirm Your Purchase</h2>
+        <div class="pricing-card">
+          <h3>Package: Advance</h3>
+          <p class="price">₹3000</p>
+          <p>
+            You are about to make a purchase of ₹3000 for the Advance Package.
+            Select the duration and click below to confirm your selection.
+          </p>
+        </div>
+
+        <form id="payment-form" action="checkout_3000.html" method="GET">
+          <label for="months">Select Subscription Duration (in months):</label>
+          <select id="months" name="months">
+            <option value="1">1 Month - ₹3000</option>
+            <option value="2">2 Months - ₹6000</option>
+            <option value="3">3 Months - ₹9000</option>
+            <option value="6">6 Months - ₹18000</option>
+            <option value="12">12 Months - ₹36000</option>
+          </select>
+
+          <br />
+
+          <p>Total Amount: <span id="total-amount">₹3000</span></p>
+
+          <!-- Submit directly to checkout_5000.html -->
+          <button type="submit" class="cta-button">Confirm Purchase</button>
+        </form>
+      </section>
+    </div>
+
+    <footer class="footer">
+      <p>&copy; 2024 OnRoadMechanix. All rights reserved.</p>
+    </footer>
+
+    <script>
+      const monthsDropdown = document.getElementById("months");
+      const totalAmountSpan = document.getElementById("total-amount");
+
+      // Prices for each month option
+      const pricePerMonth = 3000;
+
+      // Update the total amount dynamically
+      monthsDropdown.addEventListener("change", function () {
+        const selectedMonths = parseInt(this.value);
+        const totalAmount = selectedMonths * pricePerMonth;
+        totalAmountSpan.textContent = `₹${totalAmount}`;
+      });
+    </script>
+  </body>
+</html>

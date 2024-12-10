@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mechanic Near Me - OnRoadMechanix</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="MechanicNearMe.css" />
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&libraries=places&callback=initMap"
+      async
+      defer
+    ></script>
+  </head>
+
+  <body>
+    <header class="navbar">
+      <div class="logo">OnRoadMechanix</div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h1>Mechanic Near Me</h1>
+        <p>
+          Find nearby mechanics for your vehicle repair needs by entering your
+          location.
+        </p>
+      </section>
+
+      <section class="find-mechanic">
+        <div class="form-container">
+          <h2>Find a Mechanic</h2>
+          <form id="mechanic-form">
+            <div class="input-group">
+              <label for="location">Your Location:</label>
+              <input
+                type="text"
+                id="location"
+                name="location"
+                placeholder="Enter your location"
+                required
+              />
+            </div>
+            <button type="submit" class="cta-button">
+              Find Nearby Mechanics
+            </button>
+          </form>
+        </div>
+
+        <!-- Display mechanics here -->
+        <div id="mechanics-results">
+          <h3>Nearby Mechanics:</h3>
+          <div id="results-list"></div>
+          <div id="map"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2024 OnRoadMechanix. All rights reserved.</p>
+    </footer>
+
+    <script src="MechanicNearMe.js"></script>
+  </body>
+</html>

@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;700&display=swap");
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Baloo Bhai 2", sans-serif;
+  background-color: #1f1f1f; /* Dark background */
+  color: #d3d3d3; /* Light text color for contrast */
+}
+
+/* Navbar Styling */
+.navbar {
+  background-color: #1f1f1f; /* Dark background for navbar */
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .logo {
+  color: #ffcc00; /* Yellow color for logo */
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.navbar nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.navbar nav ul li {
+  display: inline;
+}
+
+.navbar nav ul li a {
+  color: #d3d3d3; /* Light gray links */
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.navbar nav ul li a:hover {
+  color: #ffcc00; /* Hover effect with yellow */
+}
+
+/* Container */
+.container {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #2e2e2e; /* Dark background for the container */
+  border-radius: 10px;
+}
+
+/* Pricing Section */
+.pricing-section {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.pricing-section h2 {
+  font-size: 2rem;
+  color: #ffcc00; /* Yellow color for section heading */
+  margin-bottom: 20px;
+}
+
+.pricing-card {
+  background-color: #1f1f1f; /* Dark card background */
+  padding: 20px;
+  border-radius: 8px;
+  color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  width: 60%;
+}
+
+.pricing-card h3 {
+  font-size: 1.5rem;
+  color: #ffcc00; /* Yellow color for card heading */
+  margin-bottom: 15px;
+}
+
+.pricing-card p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.pricing-card .price {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #ffcc00; /* Yellow price color */
+}
+
+form {
+  margin-top: 30px;
+}
+
+form label {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #d3d3d3; /* Light gray for form labels */
+}
+
+form select {
+  width: 100%;
+  padding: 10px;
+  margin: 15px 0;
+  border: 1px solid #d3d3d3; /* Light gray border */
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #333; /* Dark background for dropdown */
+  color: #d3d3d3; /* Light text color in dropdown */
+}
+
+form p {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #d3d3d3; /* Light gray for total amount */
+}
+
+/* Button Styles */
+.cta-button {
+  background-color: #ffcc00; /* Yellow background */
+  color: #1f1f1f; /* Dark text color */
+  padding: 15px 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+.cta-button:hover {
+  background-color: #d3d3d3; /* Light gray on hover */
+  color: #1f1f1f; /* Dark text on hover */
+}
+
+/* Footer Styling */
+.footer {
+  background-color: #1f1f1f; /* Dark background for footer */
+  color: #d3d3d3; /* Light gray text */
+  padding: 20px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.footer p {
+  font-size: 1rem;
+}
+
+/* Payment Button Container */
+.payment-btn-container {
+  margin-top: 30px;
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feedback - OnRoadMechanix</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="Feedback.css" />
+  </head>
+
+  <body>
+    <header class="navbar">
+      <div class="logo">OnRoadMechanix</div>
+      <nav>
+        <ul>
+          <li><a href="Home.html">Home</a></li>
+          <li><a href="#about-us">About Us</a></li>
+          <li><a href="ContactUs.html">Contact Us</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="Login.html">Login/Signup</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h1>Give Us Your Feedback</h1>
+        <p>
+          We'd love to hear about your experience with OnRoadMechanix. Please
+          fill out the form below.
+        </p>
+      </section>
+
+      <section class="feedback-form-section">
+        <div class="form-container">
+          <h2>Feedback Form</h2>
+          <form id="feedback-form" method="POST">
+            <div class="input-group">
+              <label for="name">Name:</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your name"
+                required
+              />
+            </div>
+            <div class="input-group">
+              <label for="email">Email:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+                required
+              />
+            </div>
+            <div class="input-group">
+              <label for="message">Feedback Message:</label>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Write your feedback here..."
+                required
+              ></textarea>
+            </div>
+            <div class="input-group">
+              <label for="rating">Rating:</label>
+              <div class="rating-container">
+                <span class="star" data-value="1">&#9733;</span>
+                <span class="star" data-value="2">&#9733;</span>
+                <span class="star" data-value="3">&#9733;</span>
+                <span class="star" data-value="4">&#9733;</span>
+                <span class="star" data-value="5">&#9733;</span>
+              </div>
+              <input type="hidden" id="rating" name="rating" required />
+            </div>
+            <button type="submit" class="cta-button" id="submit-btn">
+              Submit Feedback
+            </button>
+          </form>
+          <div id="response-message"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2024 OnRoadMechanix. All rights reserved.</p>
+    </footer>
+
+    <script src="Feedback.js"></script>
+  </body>
+</html>
